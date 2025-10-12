@@ -4,41 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Projects</title>
-    <link rel="styles" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-    <header class="section1">
-        <h1 style="color: black;"><b>About Me &#128059;</h1>
+    <header>
+        <h1 style="color: black;"><b>CSS Projects</h1>
     </header>
 
     <nav>
-            <a href="https://jurassicworldalive.com/">My Favorite Mobile Game's Website - #LoveDinosaurs</a>
-            <br>
-            <a href="https://www.thedailymeal.com/img/gallery/10-golden-tips-for-making-your-own-boba/l-intro-1670360122.jpg">My Favorite Drink - Boba!</a>
-            <a href="../index.html">Home Page</a>
+        <a href="../index.html" class="btn-combo" style="color: #55c398;">Home Page</a>
     </nav>
 
     <section>
-        <h3>Intro to the page</h3>
+        <h3>This is CSS Projects! These are the fancy things I've decided to display:
+            <ul style="list-style-position: inside; text-align: center; padding-left: 0;">
+                <li>
+                    Hover, Click, Glow & Linear Buttons
+                </li>
+
+                <li>
+                    Gif Rotate, Grayscale & Infinite Rotate
+                </li>
+
+                <li>
+                    Stylized Quote Box w/ hover effects
+                </li>
+
+            </ul>
+        </h3>
     </section>
 
     <section>
-        <h3>Project #1</h3>
+        <h3>Project #1 - CSS Buttons Showcase</h3>
+        <p>Fancy pants buttons:</p>
+        <button class="onlyHover">Hover Button</button>
+        <button class="onlyClick">Click Button</button>
+        <button class="onlyGlow">Glow Button</button>
+        <button class="onlyLinear">Linear Button</button>
     </section>
 
     <section>
-        <h3>Project #1</h3>
+        <h3>Project #2 - Image Effects Showcase</h3>
+        <div class="gallery">
+            <img src="https://i.pinimg.com/originals/d5/3a/94/d53a94e698d298af666d6ac0c6a63ab5.gif" alt="Therizinosaurus and Tyrannosaurus roaring" class="dinosaurHover">
+            <img src="https://c.tenor.com/E2LN1JbQxDsAAAAC/tenor.gif" alt="Three unicorns arriving at Candy Mountain. Candy Mountain Charlie, Candy Mountain" class="unicornHover">
+            <img src="https://i.pinimg.com/originals/4e/38/73/4e38736ff90e3fe541a22961039f1d87.gif" alt="Avatar Aang in the final battle versus Lord Ozai" class="aangRotate">
+        </div>
     </section>
 
-    <section>
-        <h3>Project #1</h3>
+    <section class="favoriteQuote">
+        <h3 id="fontFix">Project #3 - Styled Quote Box</h3>
+        <blockquote class="quote-box">
+            "Where the heart is willing, it will find a thousand ways; where it is unwilling, it will find a thousand excuses."
+            <cite>- Arlen Price</cite>
+        </blockquote>
     </section>
 
     <footer>
-         <section class="section1">
          <h3 style="color: black;"><u>Created By: Claire Whitney</u></h3>
-         </section>
     </footer>
 
 </body>
