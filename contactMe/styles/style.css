@@ -1,0 +1,141 @@
+/* Global styles */
+body,
+header,
+footer,
+#fontFix {
+  font-size: 20px;
+  color: #55c398;
+  font-family: Copperplate, Papyrus, fantasy;
+  text-align: center;
+  margin: 30px auto;
+  width: 100%;
+  background-color: #002921;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+}
+
+/* Navigation buttons */
+.btn-combo {
+  border: none;
+  background-color: #002921;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-combo:hover {
+  background-color: #1e5542;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+/* Link styling */
+a {
+  background-color: #234642;
+  border: 2px solid #3A736B;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: #55c398;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Header and footer */
+header,
+footer {
+  border: 5px solid black;
+  margin: 0 auto;
+  background-color: #3A736B;
+  padding: 20px;
+}
+
+/* Section styling */
+section {
+  border: 5px solid #77BFA3;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+/* Contact form container */
+.contact-form {
+  background: #3A736B;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px black;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Form headings */
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form labels */
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Form inputs */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px dotted black;
+  box-sizing: border-box;
+  font-size: 1em;
+  background-color: #f8f8f8;
+}
+
+.contact-form input[type="color"],
+.contact-form input[type="range"] {
+  padding: 5px;
+}
+
+/* Input focus effect */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #55c398;
+  box-shadow: 0 0 5px rgba(85, 195, 152, 0.5);
+}
+
+/* Submit button */
+button {
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #3A736B;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #507f6d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Inline radio/checkbox options */
+.inline-options {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}

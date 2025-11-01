@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header-footer">
+        <h1 style="color: black;"><b>Contact Me</h1>
+    </header>
+        <nav>
+            <a href="https://play.google.com/store/apps/details?id=com.ludia.jw2&hl=en-US&pli=1" class="btn-combo"
+                style="color: #55c398;">My Favorite Mobile Game in the App store - #LoveDinosaurs</a>
+            <a href="https://www.thedailymeal.com/img/gallery/10-golden-tips-for-making-your-own-boba/l-intro-1670360122.jpg"
+                class="btn-combo" style="color: #55c398;">My Favorite Drink - Boba!</a>
+            <a href="../cssProjects/index.html" class="btn-combo" style="color: #55c398;">CSS Projects</a>
+            <a href="../index.html" class="btn-combo" style="color: #55c398;">About Me</a>
+        </nav>
+
+    <section>
+        <h2>Introduction to the page</h2>
+        <p>This is a simulation of a contact page, this does not actually work.</p>
+    </section>
+
+    <section>
+        <form id="contactForm" class="contact-form">
+            <h2>Contact Me</h2>
+            <p>All areas with a * are required.</p>
+            <label for="name">Name: *</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email: *</label>
+            <input type="email" id="email" placeholder="johndoe@gmail.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter a password">
+
+            <label for="phone">Phone Number: *</label>
+            <input type="tel" id="phone" placeholder="(256)555-5555" required>
+
+            <label for="website">Website: *</label>
+            <input type="url" id="website" placeholder="https://google.com" required>
+
+            <label for="age">Age: *</label>
+            <input type="number" id="age" min="1" max="120" placeholder="20" required>
+
+            <label for="dob">Date of Birth: *</label>
+            <input type="date" id="dob" required>
+
+            <label for="time">Preferred Contact Time:</label>
+            <input type="time" id="time">
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" value="#000000">
+
+            <label for="range">Interest Level (1-10) *</label>
+            <input type="range" id="range" min="1" max="10" value="5" required>
+
+            <!--Div Radio Buttons-->
+            <label>Preferred Contact Method:</label>
+            <div class="inline-options">
+            <input type="radio" name="contactMethod" value="Email" checked>
+            Email
+            <input type="radio" name="contactMethod" value="Phone">
+            Phone
+            <input type="radio" name="contactMethod" value="Text">
+            Text
+            </div>
+
+            <!--Checkboxes-->
+            <label>Services Interest In:</label>
+            <div class="inline-options">
+            <input type="checkbox" name="service" value="Web Design">
+            Web Design
+            <input type="checkbox" name="service" value="Consulting">
+            Consulting
+            <input type="checkbox" name="service" value="Other">
+            Other
+            </div>
+
+            <!--Dropdown-->
+            <label for="topic">Topic:</label>
+            <select id="topic">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+
+            <!--Textarea-->
+            <label for="message">Message: *</label>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <!--Submit Button-->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3 style="color: black;"><u>Created By: Claire Whitney</u></h3>
+    </footer>
+</body>
+
+</html>

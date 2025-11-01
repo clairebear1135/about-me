@@ -1,114 +1,119 @@
+/* Global Styles */
+body,
 header,
 footer,
-nav,
-body,
 #fontFix {
-    font-size: 20px;
-    color: #55c398;
-    font-family: Copperplate, Papyrus, fantasy;
-    text-align: center;
-    margin: 30px auto;
-    width: 100%;
-    background-color: #002921;
-    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  font-size: 20px;
+  color: #55c398;
+  font-family: Copperplate, Papyrus, fantasy;
+  text-align: center;
+  margin: 30px auto;
+  width: 100%;
+  background-color: #002921;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
 }
 
 /* Navbar Link Effects */
 a {
-    background-color: #234642;
-    border: 2px solid #3A736B;
-    border-radius: 5px;
+  background-color: #234642;
+  border: 2px solid #3A736B;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: #55c398;
+  text-decoration: none;
+  display: inline-block;
 }
 
+/* Button Styling */
 .btn-combo {
-    border: none;
-    background-color: #002921;
-    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  border: none;
+  background-color: #002921;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .btn-combo:hover {
-    background-color: #1e5542;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.1);
-    transition: all 0.3s;
+  background-color: #1e5542;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
-/* Uniformity Assurance */
+/* Header & Footer */
 header,
 footer {
-    border: 5px solid black;
-    margin: 0 auto;
-    background-color: #3A736B;
+  border: 5px solid black;
+  margin: 0 auto;
+  background-color: #3A736B;
+  padding: 20px;
 }
 
+/* Section Styling */
 section {
-    border: 5px solid #77BFA3;
-    border-radius: 20px;
-    padding: 30px;
-    margin: 20px auto;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.1)
+  border: 5px solid #77BFA3;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px auto;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
 }
 
 /* Project 1: CSS Buttons Showcase */
-/* Hover Button Effects */
+.onlyHover,
+.onlyGlow,
+.onlyLinear,
+.onlyClick {
+  border: none;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Hover Button */
 .onlyHover {
-    border: none;
-    padding: 30px;
-    border-radius: 10px;
-    font-size: 24px;
-    color: black;
+  color: black;
+  background-color: transparent;
 }
 
 .onlyHover:hover {
-    background-color: #507f6d;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #507f6d;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Glow Button Effects */
+/* Glow Button */
 .onlyGlow {
-    border: none;
-    background-color: purple;
-    color: white;
-    border-radius: 10px;
-    transition: all 0.3s;
-    padding: 30px;
-    font-size: 24px;
+  background-color: purple;
+  color: white;
+  transition: all 0.3s ease;
 }
 
 .onlyGlow:hover {
-    box-shadow: 0 0 100px purple;
+  box-shadow: 0 0 100px purple;
 }
 
-/* Linear Button Effects */
+/* Linear Button */
 .onlyLinear {
-    border: none;
-    padding: 30px;
-    color: white;
-    background-color: #507f6d;
-    border-radius: 10px;
-    font-size: 24px;
+  background-color: #507f6d;
+  color: white;
 }
 
 .onlyLinear:hover {
-    color: black;
-    background-image: linear-gradient(to right, red, yellow, green);
+  color: black;
+  background-image: linear-gradient(to right, red, yellow, green);
 }
 
-/* Click Button Effects */
+/* Click Button */
 .onlyClick {
-    border: none;
-    display: inline-block;
-    padding: 30px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #04AA6D;
-    border-radius: 10px;
-    box-shadow: 0 9px #999;
+  background-color: #04AA6D;
+  color: white;
+  box-shadow: 0 9px #999;
 }
 
 .onlyClick:active {
@@ -118,88 +123,79 @@ section {
 
 /* Project 2: Image Effects Showcase */
 .gallery {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 200px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
 }
 
-.dinosaurHover {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-}
-
-.dinosaurHover:hover {
-    transition: transform 0.2 ease;
-    object-fit: cover;
-    transform: scale(1.25) rotate(20deg);
-    opacity: 1;
-}
-
-.unicornHover {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-}
-
-.unicornHover:hover {
-    filter: grayscale(100%);
-    transition: filter 0.4, transform 0.3;
-    transform: scale(1.25);
-}
-
+.dinosaurHover,
+.unicornHover,
 .aangRotate {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-    animation: spin 40s linear infinite;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Dinosaur Hover */
+.dinosaurHover:hover {
+  transform: scale(1.25) rotate(20deg);
+  opacity: 1;
+}
+
+/* Unicorn Hover */
+.unicornHover:hover {
+  filter: grayscale(100%);
+  transform: scale(1.25);
+}
+
+/* Aang Rotate */
+.aangRotate {
+  animation: spin 40s linear infinite;
 }
 
 @keyframes spin {
-    from {
-transform: rotate(0deg);
-}
-    to {
-transform: rotate(360deg);
-}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Project 3: Styled Quote Box */
 .favoriteQuote {
-    text-align: center;
-    max-width: 100%;
-    color: black;
-    margin-bottom: 30px;
-    font-size: 20px;
+  text-align: center;
+  max-width: 100%;
+  color: black;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 .quote-box {
-    background-color: #003a66;
-    background-image: linear-gradient(125deg, grey, brown), url("https://www.transparenttextures.com/patterns/argyle.png");
-    background-blend-mode: multiply;
-    padding: 30px 20px;
-    border-left: 5px solid #486982;;
-    box-shadow: 0 5px 10px black;
-    color: #245b86;
-    transition: transform 0.2 ease, box-shadow 0.2 ease;
+  background-color: #003a66;
+  background-image: linear-gradient(125deg, grey, brown), url("https://www.transparenttextures.com/patterns/argyle.png");
+  background-blend-mode: multiply;
+  padding: 30px 20px;
+  border-left: 5px solid #486982;
+  box-shadow: 0 5px 10px black;
+  color: #245b86;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 
 .quote-box:hover {
-    background-color: #003a66;
-    background-image: linear-gradient(125deg, brown, grey), url("https://www.transparenttextures.com/patterns/argyle.png");
-    transform: translateY(-4px);
-    box-shadow: 0 5px 15px black;
+  background-image: linear-gradient(125deg, brown, grey), url("https://www.transparenttextures.com/patterns/argyle.png");
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px black;
 }
 
-.quote-box,
-cite {
-    display: block;
-    margin-top: 15px;
-    text-align: right;
-    letter-spacing: 3px;
+.quote-box cite {
+  display: block;
+  margin-top: 15px;
+  text-align: right;
+  letter-spacing: 3px;
 }
